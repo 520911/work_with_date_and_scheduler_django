@@ -9,9 +9,9 @@ from mailing.models import Mailing, Client, Request
 def post_request(ids,
                  url=os.environ.get('URL', default='https://probe.fbrq.cloud/v1/send/'),
                  token=os.environ.get('JWT',
-                                      default='eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.'
-                                              'eyJleHAiOjE2NzY1NTU4NjgsImlzcyI6ImZhYnJpcXVlIiwibmFtZSI6IkRlbmlzIn0.'
-                                              'koFNsnOlaM9L0vJ0Ovn_upxRfUngbAbwDeuaReHURjg')):
+                                      default='eyJhbGciO5cCI6IkpXVCJ9.'
+                                              'eyJleHAiOjmZhYnJpcXVlIiwibmFtZSI6IkRlbmlzIn0.'
+                                              'koFNsnOlaM9L0vbAbwDeuaReHURjg')):
     header = {
         'Authorization': f'Bearer {token}',
         'Content-Type': 'application/json'}
